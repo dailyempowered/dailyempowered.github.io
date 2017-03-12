@@ -327,6 +327,9 @@ hr {
   hr.major {
     margin: 3em 0; }
 
+.sans-paragraph {
+  font-family: "nimbus-sans", sans-serif; }
+
 /* Section/Article */
 section.special, article.special {
   text-align: center; }
@@ -675,6 +678,11 @@ input[type="radio"] + label:before {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1.0; }
 
+#mm-email-error {
+  left: 10px;
+  position: absolute;
+  top: 60px; }
+
 /* Button */
 input[type="submit"],
 input[type="reset"],
@@ -754,33 +762,33 @@ button,
     margin: 0 0 1em 0; } }
 
 /* Signup Form */
-#signup-form {
+.signup-form {
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   position: relative; }
-  #signup-form input[type="text"],
-  #signup-form input[type="password"],
-  #signup-form input[type="email"] {
+  .signup-form input[type="text"],
+  .signup-form input[type="password"],
+  .signup-form input[type="email"] {
     width: 18em; }
-  #signup-form > * {
+  .signup-form > * {
     margin: 0 0 0 1em; }
-  #signup-form > :first-child {
+  .signup-form > :first-child {
     margin: 0 0 0 0; }
   @media screen and (max-width: 480px) {
-    #signup-form {
+    .signup-form {
       -moz-flex-direction: column;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column; }
-      #signup-form input[type="type"],
-      #signup-form input[type="password"],
-      #signup-form input[type="email"] {
+      .signup-form input[type="type"],
+      .signup-form input[type="password"],
+      .signup-form input[type="email"] {
         width: 100%; }
-      #signup-form > * {
+      .signup-form > * {
         margin: 1.25em 0 0 0; }
-      #signup-form .message {
+      .signup-form .message {
         bottom: -1.5em;
         font-size: 0.9em;
         height: 1em;
